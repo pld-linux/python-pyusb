@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{module}-%{version}-src.tar.gz
-# Source0-md5:	b2e11ffa387801f5f24b4aea0fa7d742
+# Source0-md5:	b86333284659f15986206413df61123e
 URL:		http://pyusb.sf.net/
 %pyrequires_eq	python
 BuildRequires:	python-devel
