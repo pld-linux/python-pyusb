@@ -8,7 +8,7 @@ License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/pyusb/%{module}-%{version}-src.tar.gz
 # Source0-md5:	b86333284659f15986206413df61123e
-URL:		http://pyusb.sf.net/
+URL:		http://pyusb.sourceforge.net/
 BuildRequires:	libusb-devel
 BuildRequires:	python-devel
 BuildRequires:	unzip
