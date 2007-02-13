@@ -1,6 +1,6 @@
 %define	module	pyusb
 Summary:	PyUSB provides USB access on the Python language
-Summary(pl.UTF-8):   PyUSB - dostęp do USB z poziomu języka Python
+Summary(pl.UTF-8):	PyUSB - dostęp do USB z poziomu języka Python
 Name:		python-%{module}
 Version:	0.1
 Release:	1
