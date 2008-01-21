@@ -2,12 +2,12 @@
 Summary:	PyUSB provides USB access on the Python language
 Summary(pl.UTF-8):	PyUSB - dostęp do USB z poziomu języka Python
 Name:		python-%{module}
-Version:	0.1
+Version:	0.4.1
 Release:	1
-License:	GPL
+License:	BSD
 Group:		Development/Languages/Python
-Source0:	http://dl.sourceforge.net/pyusb/%{module}-%{version}-src.tar.gz
-# Source0-md5:	b86333284659f15986206413df61123e
+Source0:	http://dl.sourceforge.net/pyusb/%{module}-%{version}.tar.gz
+# Source0-md5:	9576c3e471e40e021fa44f36712bbd04
 URL:		http://pyusb.sourceforge.net/
 BuildRequires:	libusb-devel
 BuildRequires:	python-devel
@@ -22,7 +22,7 @@ PyUSB provides USB access on the Python language.
 PyUSB daje dostęp do USB z poziomu języka Python.
 
 %prep
-%setup  -q -n %{module}
+%setup -q -n %{module}-%{version}
 
 %build
 python ./setup.py build
