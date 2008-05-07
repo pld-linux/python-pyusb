@@ -11,6 +11,7 @@ Source0:	http://dl.sourceforge.net/pyusb/%{module}-%{version}.tar.gz
 URL:		http://pyusb.sourceforge.net/
 BuildRequires:	libusb-devel
 BuildRequires:	python-devel
+BuildRequires:	rpm-pythonprov
 BuildRequires:	unzip
 %pyrequires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,12 +26,12 @@ PyUSB daje dostęp do USB z poziomu języka Python.
 %setup -q -n %{module}-%{version}
 
 %build
-python ./setup.py build
+%{__python} ./setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python ./setup.py install \
+%{__python} ./setup.py install \
 	--optimize 2 \
 	--root=$RPM_BUILD_ROOT
 
