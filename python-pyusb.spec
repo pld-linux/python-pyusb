@@ -6,13 +6,12 @@ Version:	0.4.2
 Release:	2
 License:	BSD
 Group:		Development/Languages/Python
-Source0:	http://dl.sourceforge.net/pyusb/%{module}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/pyusb/%{module}-%{version}.tar.gz
 # Source0-md5:	5667a00af1ac0d5062103b4512e227f8
 URL:		http://pyusb.sourceforge.net/
-BuildRequires:	libusb-devel
+BuildRequires:	libusb-compat-devel
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
-BuildRequires:	unzip
 %pyrequires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
