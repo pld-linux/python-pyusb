@@ -9,6 +9,7 @@ Group:		Development/Languages/Python
 Source0:	http://downloads.sourceforge.net/pyusb/%{module}-%{version}.tar.gz
 # Source0-md5:	5667a00af1ac0d5062103b4512e227f8
 URL:		http://pyusb.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	libusb-compat-devel
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
