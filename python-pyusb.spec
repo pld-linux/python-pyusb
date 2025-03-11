@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	PyUSB - dostęp do USB z poziomu języka Python
 Name:		python-%{module}
 # keep 1.1.x here for python2 support
 Version:	1.1.0
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	https://downloads.sourceforge.net/pyusb/%{module}-%{version}.tar.gz
